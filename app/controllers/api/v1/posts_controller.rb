@@ -1,5 +1,6 @@
 class Api::V1::PostsController < ApplicationController
-  before_action :set_api_v1_post, only: [:show, :update, :destroy]
+  before_action :authenticate_user!
+  # before_action :set_api_v1_post, only: [:show, :update, :destroy]
 
   # GET /api/v1/posts
   def index
