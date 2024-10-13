@@ -44,3 +44,5 @@ gem "rack-cors", "~> 2.0"
 gem "devise", "~> 4.9"
 
 gem "devise-jwt", "~> 0.12.1"
+
+gem "dotenv-rails", "~> 2.8"
