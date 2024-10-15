@@ -313,6 +313,9 @@ Devise.setup do |config|
 
   # Manually Added
 
+  config.skip_session_storage = [:http_auth, :token_auth]
+  
+
   config.jwt do |jwt|
     jwt.secret = ENV['DEVISE_JWT_SECRET_KEY']
     # jwt.dispatch_requests = [
